@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    
+
+<script>
+
+function pulalinha () {
+    document.write("<br>");
+}
+
+function mostra (frase) {
+    document.write(frase);
+    pulalinha ();
+}
+
+var nome = prompt ("informe seu nome");
+var peso = prompt (nome +" informe seu peso");
+var altura = prompt (nome +" informe sua altura");
+var imcpessoa = peso / (altura * altura);
+
+mostra ("o imc de "+ nome +" é "+ imcpessoa );
+
+
+if (imcpessoa < 18.5) {
+
+    mostra ("você está abaixo do peso")
+
+}
+
+if (imcpessoa > 25) {
+
+mostra ("você está acima do peso")
+
+}
+
+if (imcpessoa >= 18.5) {
+    if (imcpessoa <= 25)
+
+        mostra ("seu imc esta no tamanho ideal")
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
